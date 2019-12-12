@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+
+  <!-- My APP  -->
+  <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+  <!-- Bootstrap -->
+  <link href="stylesheets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <!-- font awesome -->
+  <link href="stylesheets/css/font-awesome.css" rel="stylesheet">
+  <!-- jquery css counter time -->
+  <link rel="stylesheet" href="stylesheets/css/jquery.countdown.css" />
+  <!-- lightbox slider -->
+  <link rel="stylesheet" href="stylesheets/css/lightbox.css">
+  <!-- stylesheets -->
+  <link href="stylesheets/css/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+
+
+  <title>Weeding Hardi's</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+  <!--js working-->
+	<script type='text/javascript' src='stylesheets/js/jquery-2.2.3.min.js'></script>
+	<script src="stylesheets/js/bootstrap.js"></script>
+	<!-- //js  working-->
+
+	<!--  light box js -->
+	<script src="stylesheets/js/lightbox-plus-jquery.min.js"> </script>
+	<!-- //light box js-->
+	<!-- banner-->
+	<script src="stylesheets/js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!--// banner-->
+	<!--scripts-->
+	<script src="stylesheets/js/jquery.countdown.js"></script>
+	<!--countdowntimer-js-->
+	<script src="stylesheets/js/script.js"></script>
+	<!--countdowntimer-js-->
+	<!--//scripts-->
+
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="stylesheets/js/move-top.js"></script>
+	<script type="text/javascript" src="stylesheets/js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>
+
+</html>
