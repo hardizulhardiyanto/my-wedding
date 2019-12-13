@@ -2,56 +2,56 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+ <!-- Meta Tags -->
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <!-- My APP  -->
-  <script type="application/x-javascript">
-      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-      function hideURLbar(){ window.scrollTo(0,1); }
-    </script>
-  <!-- Bootstrap -->
-  <link href="stylesheets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-  <!-- font awesome -->
-  <link href="stylesheets/css/font-awesome.css" rel="stylesheet">
-  <!-- jquery css counter time -->
-  <link rel="stylesheet" href="stylesheets/css/jquery.countdown.css" />
-  <!-- lightbox slider -->
-  <link rel="stylesheet" href="stylesheets/css/lightbox.css">
-  <!-- stylesheets -->
-  <link href="stylesheets/css/style.css" rel='stylesheet' type='text/css' media="all">
-  <!--//stylesheets-->
-  <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+ <!-- Favicon and Touch Icons -->
+ <link href="stylesheets/images/favicon/favicon.png" rel="shortcut icon" type="image/png">
+ <link href="stylesheets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+ <link href="stylesheets/images/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+ <link href="stylesheets/images/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+ <link href="stylesheets/images/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
 
+ <!-- Icon fonts -->
+ <link href="stylesheets/css/font-awesome.min.css" rel="stylesheet">
+ <link href="stylesheets/css/flaticon.css" rel="stylesheet">
 
+ <!-- Bootstrap core CSS -->
+ <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
 
+ <!-- Plugins for this template -->
+ <link href="stylesheets/css/animate.css" rel="stylesheet">
+ <link href="stylesheets/css/owl.carousel.css" rel="stylesheet">
+ <link href="stylesheets/css/owl.theme.css" rel="stylesheet">
+ <link href="stylesheets/css/slick.css" rel="stylesheet">
+ <link href="stylesheets/css/slick-theme.css" rel="stylesheet">
+ <link href="stylesheets/css/owl.transitions.css" rel="stylesheet">
+ <link href="stylesheets/css/jquery.fancybox.css" rel="stylesheet">
+ <link href="stylesheets/css/magnific-popup.css" rel="stylesheet">
+
+ <!-- Custom styles for this template -->
+ <link href="stylesheets/css/style.css" rel="stylesheet">
+ <link href="stylesheets/css/count.css" rel="stylesheet">
+
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->
+
+ <!-- footer hardy -->
+ 
+ <!-- end footer -->
 
   <title>Weeding Hardi's</title>
 </head>
 
-<body>
+<body id="home">
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <div id="root" class="d-flex align-items-center" style="height: 100vh;"></div>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -63,75 +63,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
+  </body>
+	 <!-- All JavaScript files
+    ================================================== -->
+    <script src="stylesheets/js/jquery.min.js"></script>
+    <script src="stylesheets/js/bootstrap.min.js"></script>
 
-  <!--js working-->
-	<script type='text/javascript' src='stylesheets/js/jquery-2.2.3.min.js'></script>
-	<script src="stylesheets/js/bootstrap.js"></script>
-	<!-- //js  working-->
+    <!-- Plugins for this template -->
+    <script src="stylesheets/js/jquery-plugin-collection.js"></script>
 
-	<!--  light box js -->
-	<script src="stylesheets/js/lightbox-plus-jquery.min.js"> </script>
-	<!-- //light box js-->
-	<!-- banner-->
-	<script src="stylesheets/js/responsiveslides.min.js"></script>
-	<script>
-		$(function () {
-			$("#slider").responsiveSlides({
-				auto: true,
-				pager: true,
-				nav: true,
-				speed: 1000,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
-				}
-			});
-		});
-	</script>
-	<!--// banner-->
-	<!--scripts-->
-	<script src="stylesheets/js/jquery.countdown.js"></script>
-	<!--countdowntimer-js-->
-	<script src="stylesheets/js/script.js"></script>
-	<!--countdowntimer-js-->
-	<!--//scripts-->
-
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="stylesheets/js/move-top.js"></script>
-	<script type="text/javascript" src="stylesheets/js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 900);
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear'
-			};
-
-
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-
-		});
-	</script>
-	<!-- //here ends scrolling icon -->
-</body>
-
-</html>
+    <!-- Custom script for this template -->
+  <script src="stylesheets/js/script.js"></script>
+  <script src="stylesheets/js/hardi-countdown.js"></script>
+  
+  </html>
