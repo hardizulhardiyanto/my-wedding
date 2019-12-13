@@ -1,7 +1,60 @@
 import React, { Component } from 'react';
 
 export default class Rsvp extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            nama: '',
+            email: '',
+            jmlKeluarga: '1',
+            alamat: '',
+            deskripsi: '',
+        };
+        this.handleNama = this.handleNama.bind(this);
+        this.handleEmail = this.handleEmail.bind(this);
+        this.handlejmlKeluarga = this.handlejmlKeluarga.bind(this);
+        this.handleAlamat = this.handleAlamat.bind(this);
+        this.handleDeskripsi = this.handleDeskripsi.bind(this);
+        this.handleSave = this.handleSave.bind(this);
+    }
+
+    handleNama(e) {
+        this.setState({ nama: e.target.value })
+    }
+
+    handleEmail(e) {
+        this.setState({ email: e.target.value })
+    }
+
+    handlejmlKeluarga(e) {
+        this.setState({ jmlKeluarga: e.target.value })
+    }
+
+    handleAlamat(e) {
+        this.setState({ alamat: e.target.value })
+    }
+
+    handleDeskripsi(e) {
+        this.setState({ deskripsi: e.target.value })
+    }
+
+    handleSave(e) {
+
+        e.preventDefault()
+
+        this.props.SaveDataTamu(
+            this.state.nama,
+            this.state.email,
+            this.state.jmlKeluarga,
+            this.state.alamat,
+            this.state.deskripsi
+        )
+        this.setState({ nama: '', email: '', jmlKeluarga: '1', alamat: '', deskripsi: '' })
+    }
+
+
     render() {
+
 
         return (
 
@@ -15,50 +68,57 @@ export default class Rsvp extends Component {
                             </div>
                         </div>
                     </div>
-
-                    <div className="row content">
-                        <div className="col col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                            <p>Please reserve before December 16th, 2017.</p>
-                            <form id="rsvp-form" className="form validate-rsvp-form row" method="post">
-                                <div className="col col-sm-6">
-                                    <input type="text" name="name" className="form-control" placeholder="Your Name*" />
-                                </div>
-                                <div className="col col-sm-6">
-                                    <input type="email" name="email" className="form-control" placeholder="Your Email*" />
-                                </div>
-                                <div className="col col-sm-6">
-                                    <select className="form-control" name="guest" >
-                                        <option disabled selected>Number Of Guest*</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div className="col col-sm-6">
-                                    <select className="form-control" name="events" >
-                                        <option disabled selected>I Am Attending*</option>
-                                        <option>Al events</option>
-                                        <option>Wedding ceremony</option>
-                                        <option>Reception party</option>
-                                    </select>
-                                </div>
-                                <div className="col col-sm-12">
-                                    <textarea className="form-control" name="notes" placeholder="Your Message*"></textarea>
-                                </div>
-                                <div className="col col-sm-12 submit-btn">
-                                    <button type="submit" className="submit">Send Invitation</button>
-                                    <span id="loader"><i className="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
-                                </div>
-                                <div className="col col-md-12 success-error-message">
-                                    <div id="success">Thank you</div>
-                                    <div id="error"> Error occurred while sending email. Please try again later. </div>
-                                </div>
-                            </form>
+                    <form>
+                        <div className="form-group row">
+                            <label htmlFor="nama" className="col-sm-2 col-form-label"><strong>Nama</strong></label>
+                            <div className="col-sm-10">
+                                <input type="text" className="form-control" id="nama" placeholder="nama" value={this.state.nama} onChange={this.handleNama} required />
+                            </div>
                         </div>
-                    </div>
-            </div>
-        </section>
+                        <div className="form-group row">
+                            <label htmlFor="email" className="col-sm-2 col-form-label"><strong>Email</strong></label>
+                            <div className="col-sm-10">
+                                <input type="email" className="form-control" id="email" placeholder="email" value={this.state.email} onChange={this.handleEmail} required />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label htmlFor="jmlKeluarga" className="col-sm-2 col-form-label"><strong>Jumlah Keluarga</strong></label>
+                            <div className="col-sm-10">
+                                <select id="jmlKeluarga" className="form-control" value={this.state.jmlKeluarga} onChange={this.handlejmlKeluarga}>
+                                    <option defaultChecked value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label htmlFor="alamat" className="col-sm-2 col-form-label"><strong>Alamat</strong></label>
+                            <div className="col-sm-10">
+                                <textarea id="alamat" className="form-control" rows="3" placeholder="alamat" value={this.state.alamat} onChange={this.handleAlamat} required />
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label htmlFor="deskripsi" className="col-sm-2 col-form-label"><strong>Deskripsi</strong></label>
+                            <div className="col-sm-10">
+                                <textarea id="deskripsi" className="form-control" rows="3" placeholder="deskripsi" value={this.state.deskripsi} onChange={this.handleDeskripsi} required />
+                            </div>
+                        </div>
+
+                        <div className="form-group row">
+                            <div className="col-sm-10">
+                                <button type="submit" className="btn btn-success" style={{ width: "7em" }} onClick={this.handleSave}>
+                                    <text style={{ fontWeight:"bold" }}>Add</text>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </section>
 
         )
     }

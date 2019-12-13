@@ -10,7 +10,7 @@ import SectionCta from './SectionCta';
 import SectionEvent from './SectionEvent';
 import PeopleGuest from './PeopleGuest';
 import Galery from './Galery';
-import Rsvp from './Rsvp';
+import Rsvp from '../Container/Rsvp';
 import ThanksTo from './ThanksTo';
 import TextToThanks from './TextToThanks';
 import Footer from './Footer';
@@ -29,8 +29,8 @@ export default class Home extends Component {
                 <SectionCta/>
                 <SectionEvent/>
                 <PeopleGuest/>
-                <Galery/>
                 <Rsvp/>
+                <Galery/>
                 <ThanksTo/>
                 <TextToThanks/>
                 <Footer/>

@@ -10,6 +10,8 @@ export default class Musicbox extends Component {
         }
         this.url = "./stylesheets/Sound/Can t Help Falling In Love With You - Haley Reinhart.mp3";
         this.audio = new Audio(this.url);
+        this.play = this.play.bind(this);
+        this.pause = this.pause.bind(this);
     }
 
     componentDidMount() {
@@ -27,24 +29,24 @@ export default class Musicbox extends Component {
     }
 
     render() {
-       
+
         return (
 
             <div>
-                
+
                 {this.state.play == false ?
 
                     <div className="music-box">
-                        <button onClick={this.play}>
+                        <button onClick={this.play} style={{ border: "2px solid green" }}>
                             <i className="fa fa-music"></i>
                         </button>
                     </div>
                     :
                     <div className="music-box">
-                    <button onClick={this.pause}>
-                        <i className="fa fa-music"></i>
-                    </button>
-                </div>
+                        <button onClick={this.pause} style={{ border: "2px solid red" }}>
+                            <i className="fa fa-music"></i>
+                        </button>
+                    </div>
                 }
 
 
