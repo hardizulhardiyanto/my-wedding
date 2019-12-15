@@ -18,23 +18,31 @@ export default class ThanksTo extends Component {
 
                     <div className="row content">
                         <div className="col col-lg-10 col-lg-offset-1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, cupiditate, repudiandae. A ab sit laboriosam quis distinctio dignissimos, nemo cum sed hic, deleniti maiores rem iste labore commodi perferendis cumque.repudiandae. A ab sit laboriosam quis distinctio dignissimos, nemo cum sed hic.</p>
-
+                           
                             <div className="gif-registration-slider">
                                 <div className="register">
-                                    <img src={"../../../stylesheets/images/gift/img-1.jpg"} alt className="img img-responsive" />
+                                    <img src={"../../../stylesheets/images/using/logo1.jpg"} alt className="img img-responsive" />
                                 </div>
                                 <div className="register">
-                                    <img src={"../../../stylesheets/images/gift/img-2.jpg"} alt className="img img-responsive" />
+                                    <img src={"../../../stylesheets/images/using/logo2.jpg"} alt className="img img-responsive" />
                                 </div>
                                 <div className="register">
-                                    <img src={"../../../stylesheets/images/gift/img-3.jpg"} alt className="img img-responsive" />
+                                    <img src={"../../../stylesheets/images/using/logo3.jpg"} alt className="img img-responsive" />
                                 </div>
                                 <div className="register">
-                                    <img src={"../../../stylesheets/images/gift/img-1.jpg"} alt className="img img-responsive" />
+                                    <img src={"../../../stylesheets/images/using/logo4.jpg"} alt className="img img-responsive" />
                                 </div>
                                 <div className="register">
-                                    <img src={"../../../stylesheets/images/gift/img-2.jpg"} alt className="img img-responsive" />
+                                    <img src={"../../../stylesheets/images/using/logo5.jpg"} alt className="img img-responsive" />
+                                </div>
+                                <div className="register">
+                                    <img src={"../../../stylesheets/images/using/logo6.jpg"} alt className="img img-responsive" />
+                                </div>
+                                <div className="register">
+                                    <img src={"../../../stylesheets/images/using/logo7.jpg"} alt className="img img-responsive" />
+                                </div>
+                                <div className="register">
+                                    <img src={"../../../stylesheets/images/using/logo8.jpg"} alt className="img img-responsive" />
                                 </div>
                             </div>
                         </div>

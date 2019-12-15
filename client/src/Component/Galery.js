@@ -22,64 +22,150 @@ export default class Galery extends Component {
                                 <ul>
                                     <li><a data-filter="*" href="#" className="current">All</a></li>
                                     <li><a data-filter=".wedding" href="#">Wedding</a></li>
-                                    <li><a data-filter=".ceremony" href="#">Ceremony</a></li>
-                                    <li><a data-filter=".party" href="#">Party</a></li>
+                                    <li><a data-filter=".ceremony" href="#">Preweding</a></li>
+                                    <li><a data-filter=".party" href="#">Family</a></li>
                                 </ul>
                             </div>
 
                             <div className="gallery-container gallery-fancybox masonry-gallery">
+                                
+
                                 <div className="grid wedding">
-                                    <a href={"../../../stylesheets/images/gallery/img-1.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-1.jpg"} alt className="img img-responsive" />
+                                    <a href={"../../../stylesheets/images/using/galeri/gal1.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+
+                                        <img src={"../../../stylesheets/images/using/galeri/gal1.jpeg"} alt className="img img-responsive" />
                                     </a>
                                 </div>
-                                <div className="grid wedding ceremony">
-                                    <a href={"../../../stylesheets/images/gallery/img-2.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-2.jpg"} alt className="img img-responsive" />
+
+                                <div className="grid wedding">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal2.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+
+                                        <img src={"../../../stylesheets/images/using/galeri/gal2.jpeg"} alt className="img img-responsive" />
                                     </a>
                                 </div>
-                                <div className="grid ceremony eudcation">
-                                    <a href={"../../../stylesheets/images/gallery/img-3.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-3.jpg"} alt className="img img-responsive" />
+                            
+                                <div className="grid ceremony">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal7.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+
+                                        <img src={"../../../stylesheets/images/using/galeri/gal7.jpeg"} alt className="img img-responsive" />
                                     </a>
                                 </div>
-                                <div className="grid wedding party">
-                                    <a href={"../../../stylesheets/images/gallery/img-4.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-4.jpg"} alt className="img img-responsive" />
+                                
+
+                                <div className="grid ceremony">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal6.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal6.jpeg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+
+                                <div className="grid wedding">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal3.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+
+                                        <img src={"../../../stylesheets/images/using/galeri/gal3.jpeg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+
+                                <div className="grid ceremony">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal5.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+
+                                        <img src={"../../../stylesheets/images/using/galeri/gal5.jpeg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+
+                                <div className="grid ceremony">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal8.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+
+                                        <img src={"../../../stylesheets/images/using/galeri/gal8.jpeg"} alt className="img img-responsive" />
                                     </a>
                                 </div>
                                 <div className="grid ceremony">
-                                    <a href={"../../../stylesheets/images/gallery/img-5.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-5.jpg"} alt className="img img-responsive" />
+                                    <a href={"../../../stylesheets/images/using/galeri/gal9.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+
+                                        <img src={"../../../stylesheets/images/using/galeri/gal9.jpeg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid wedding">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal4.jpeg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal4.jpeg"} alt className="img img-responsive" />
                                     </a>
                                 </div>
                                 <div className="grid party">
-                                    <a href={"../../../stylesheets/images/gallery/img-6.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-6.jpg"} alt className="img img-responsive" />
+                                    <a href={"../../../stylesheets/images/using/galeri/gal10.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal10.jpg"} alt className="img img-responsive" />
                                     </a>
                                 </div>
-                                <div className="grid wedding">
-                                    <a href={"../../../stylesheets/images/gallery/img-7.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-7.jpg"} alt className="img img-responsive" />
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal11.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal11.jpg"} alt className="img img-responsive" />
                                     </a>
                                 </div>
-                                <div className="grid ceremony">
-                                    <a href={"https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1"} data-type="iframe" className="video-play-btn">
-                                        <img src={"../../../stylesheets/images/gallery/img-8.jpg"} alt className="img img-responsive" />
-                                        <i className="fa fa-play"></i>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal12.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal12.jpg"} alt className="img img-responsive" />
                                     </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal13.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal13.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal14.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal14.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal15.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal15.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal16.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal16.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal17.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal17.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal18.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal18.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal19.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal19.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal20.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal20.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal21.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal21.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal22.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal22.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
+                                <div className="grid party">
+                                    <a href={"../../../stylesheets/images/using/galeri/gal23.jpg"} className="fancybox" data-fancybox-group="gall-1">
+                                        <img src={"../../../stylesheets/images/using/galeri/gal23.jpg"} alt className="img img-responsive" />
+                                    </a>
+                                </div>
 
-                                </div>
-                                <div className="grid ceremony">
-                                    <a href={"../../../stylesheets/images/gallery/img-9.jpg"} className="fancybox" data-fancybox-group="gall-1">
-                                        <img src={"../../../stylesheets/images/gallery/img-9.jpg"} alt className="img img-responsive" />
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
-                    </div> 
-            </div>
-        </section>
+                    </div>
+                </div>
+            </section>
 
         )
     }

@@ -1,0 +1,63 @@
+<% include partial/header %>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+
+<div class="container" style="margin: 2em;">
+    <div class="row">
+
+
+        <div class="col-md-12">
+            <h4>List Kehadiran Online</h4>
+            <div class="table-responsive">
+
+
+                <table id="mytable" class="table table-bordred table-striped">
+
+                    <thead>
+
+                        <th><input type="checkbox" id="checkall" /></th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Jml Kel</th>
+                        <th>Alamat</th>
+                        <th>Deskripsi</th>
+
+                    </thead>
+                    <tbody>
+                        <form method="post" action="/postDelete">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                            
+                            Jumlah yang hadir : <%=docs.length%>
+                            <% for ( let i = 0; i < docs.length; i++) {%>
+                                
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="checkthis" name="deleteCheck" id="deleteCheck"
+                                    value="<%=`${docs[i]._id}`%>" />
+                                    
+                                </td>
+                                <td><%= docs[i].nama %></td>
+                                <td><%= docs[i].email %></td>
+                                <td><%= docs[i].jmlKeluarga %></td>
+                                <td><%= docs[i].alamat %></td>
+                                <td><%= docs[i].deskripsi %></td>
+                                
+                            </tr>
+
+                            <% } %>
+                        </form>
+
+
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<% include partial/footer %>

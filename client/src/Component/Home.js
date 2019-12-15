@@ -8,7 +8,7 @@ import CountDown from './CountDown';
 import StorySections from './StorySections';
 import SectionCta from './SectionCta';
 import SectionEvent from './SectionEvent';
-import PeopleGuest from './PeopleGuest';
+// import PeopleGuest from './PeopleGuest';
 import Galery from './Galery';
 import Rsvp from '../Container/Rsvp';
 import ThanksTo from './ThanksTo';
@@ -28,7 +28,7 @@ export default class Home extends Component {
                 <StorySections/>
                 <SectionCta/>
                 <SectionEvent/>
-                <PeopleGuest/>
+                {/* <PeopleGuest/> */}
                 <Rsvp/>
                 <Galery/>
                 <ThanksTo/>

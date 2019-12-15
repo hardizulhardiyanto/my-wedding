@@ -20,7 +20,7 @@ export default class SectionEvent extends Component {
                         <div className="col col-lg-10 col-lg-offset-1">
                             <div className="event">
                                 <div className="img-holder">
-                                    <img src={"../../../stylesheets/images/events/img-1.jpg"} alt className="img img-responsive" />
+                                    <img src={"../../../stylesheets/images/using/logo6.jpg"} alt className="img img-responsive" />
                                 </div>
                                 <div className="details">
                                     <h3>The reception</h3>

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Swal from 'sweetalert2';
+
+
 
 export default class Rsvp extends Component {
     constructor(props) {
@@ -41,15 +44,42 @@ export default class Rsvp extends Component {
     handleSave(e) {
 
         e.preventDefault()
+        let nama = this.state.nama;
+        let email = this.state.email;
+        let jmlKeluarga = this.state.jmlKeluarga;
+        let alamat = this.state.alamat;
+        let deskripsi = this.state.deskripsi;
+        console.log(nama, email, jmlKeluarga, alamat, deskripsi);
 
-        this.props.SaveDataTamu(
-            this.state.nama,
-            this.state.email,
-            this.state.jmlKeluarga,
-            this.state.alamat,
-            this.state.deskripsi
-        )
+        if (nama && email && jmlKeluarga && alamat && deskripsi) {
+
+            Swal.fire(
+                'Thank you!! we are waiting for your arrival',
+                '',
+                'success'
+            )
+
+            this.props.SaveDataTamu(
+                this.state.nama,
+                this.state.email,
+                this.state.jmlKeluarga,
+                this.state.alamat,
+                this.state.deskripsi
+            )
+        } else {
+            Swal.fire(
+                'sorry!!, the field cannot be empty',
+                '',
+                'error'
+            )
+        }
+
+
+
+
         this.setState({ nama: '', email: '', jmlKeluarga: '1', alamat: '', deskripsi: '' })
+
+
     }
 
 
@@ -109,7 +139,7 @@ export default class Rsvp extends Component {
                         <div className="form-group row">
                             <div className="col-sm-10">
                                 <button type="submit" className="btn btn-success" style={{ width: "7em" }} onClick={this.handleSave}>
-                                    <text style={{ fontWeight:"bold" }}>Add</text>
+                                    <text style={{ fontWeight: "bold" }}>Add</text>
                                 </button>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ export default class PeopleGuest extends Component {
                         <div className="col col-xs-12">
                             <div className="section-title">
                                 <div className="vertical-line"><span><i className="fi flaticon-two"></i></span></div>
-                                <h2>Familiy List &amp; VIP Guest List</h2>
+                                <h2>Familiy List</h2>
                             </div>
                         </div>
                     </div>
@@ -22,10 +22,10 @@ export default class PeopleGuest extends Component {
                                 <div className="tablist">
                                     <ul className="nav">
                                         <li className="active">
-                                            <a href="#groomsmen" data-toggle="tab">Family List</a>
+                                            <a href="#groomsmen" data-toggle="tab">The groom</a>
                                         </li>
                                         <li>
-                                            <a href="#bridesmaid" data-toggle="tab">VIP Guest List</a>
+                                            <a href="#bridesmaid" data-toggle="tab">The bride</a>
                                         </li>
                                     </ul>
                                 </div>

@@ -8,7 +8,7 @@ export default class Musicbox extends Component {
             play: false,
             pause: true,
         }
-        this.url = "./stylesheets/Sound/Can t Help Falling In Love With You - Haley Reinhart.mp3";
+        this.url = "./stylesheets/Sound/Bruno Mars - Marry You HD.mp3";
         this.audio = new Audio(this.url);
         this.play = this.play.bind(this);
         this.pause = this.pause.bind(this);

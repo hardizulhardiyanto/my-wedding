@@ -6,14 +6,14 @@ export default class CountDown extends Component {
 
 
         return (
-            <section class="count-down-section section-padding parallax" data-bg-image="images/countdown-bg.jpg" data-speed="7">
-                <div class="container">
-                    <div class="row">
-                        <div class="col col-md-4">
+            <section className="count-down-section section-padding parallax" data-bg-image="images/countdown-bg.jpg" data-speed="7">
+                <div className="container">
+                    <div className="row">
+                        <div className="col col-md-4">
                             <h2><span>We are waiting for.....</span> The adventure</h2>
                         </div>
-                        <div class="col col-md-7 col-md-offset-1">
-                            <div class="count-down-clock">
+                        <div className="col col-md-7 col-md-offset-1">
+                            <div className="count-down-clock">
                                 <div id="countdown">
                                     
                                 </div>

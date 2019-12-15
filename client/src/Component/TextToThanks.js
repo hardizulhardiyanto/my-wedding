@@ -12,7 +12,9 @@ export default class TextToThanks extends Component {
                     <div className="row">
                         <div className="col col-xs-12">
                             <h2>Forever and Always Our Love</h2>
-                            <span>- Mick (The groom)</span>
+                            
+                            <span style={{ fontFamily:"Great Vibes", fontSize:"30px" }}>Achmad Zulhardiyanto</span>
+                            
                         </div>
                     </div>
                 </div>

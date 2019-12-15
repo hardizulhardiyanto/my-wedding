@@ -1,17 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var danaSchema = new Schema({
-    idPanti: String,
-    idBantu: String,
+var tamuSchema = new Schema({
     nama: String,
+    email: String,
+    jmlKeluarga: String,
     alamat: String,
-    judul: String,
     deskripsi: String,
-    foto: String,
-    status: String,
-    nominalSet: Number,
-    nominalProcess: Number
 })
 
-module.exports = mongoose.model('danaSchema',danaSchema);
+module.exports = mongoose.model('tamuSchema',tamuSchema);
