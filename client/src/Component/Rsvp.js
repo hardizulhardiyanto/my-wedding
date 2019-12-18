@@ -49,7 +49,6 @@ export default class Rsvp extends Component {
         let jmlKeluarga = this.state.jmlKeluarga;
         let alamat = this.state.alamat;
         let deskripsi = this.state.deskripsi;
-        console.log(nama, email, jmlKeluarga, alamat, deskripsi);
 
         if (nama && email && jmlKeluarga && alamat && deskripsi) {
 
