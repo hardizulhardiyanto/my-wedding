@@ -384,8 +384,6 @@
         = MASONRY GALLERY SETTING
     -------------------------------------------*/
     function masonryGridSetting() {
-        console.log($('.forSlider').length)
-        console.log($('.masonry-gallery').length)
         if ($('.masonry-gallery').length) {
             var $grid = $('.masonry-gallery').masonry({
                 itemSelector: '.grid',
