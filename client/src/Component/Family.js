@@ -17,29 +17,31 @@ export default class Family extends Component {
                         <span style={{ fontFamily: "Great Vibes", fontSize: "22px" }}>Hormat Kami</span>
                     </div>
 
+                    <div className="card" style={{ width: "97%", height: "auto" }}>
 
-                    <table style={{ width: "100%" }}>
-                        <tr>
-                            <th>Mempelai Wanita</th>
-                            <th style={{
+                        <table style={{ width: "100%" }}>
+                            <tr>
+                                <th>Mempelai Wanita</th>
+                                <th style={{
 
-                                float: "right"
-                            }}>Mempelai Pria</th>
-                        </tr>
-                        <tr>
-                            <td style={{ fontFamily: "Great Vibes", fontSize: "16px" }}>Kel. Bpk. M. Soleh P</td>
+                                    float: "right"
+                                }}>Mempelai Pria</th>
+                            </tr>
+                            <tr>
+                                <td style={{ fontFamily: "Great Vibes", fontSize: "16px" }}>Kel. Bpk. M. Soleh P</td>
 
-                            <td style={{ fontFamily: "Great Vibes", float: "right", fontSize: "16px" }}>Kel. Bpk. Sumartono</td>
+                                <td style={{ fontFamily: "Great Vibes", float: "right", fontSize: "16px" }}>Kel. Bpk. Sumartono</td>
 
-                        </tr>
-                        <tr>
-                            <td style={{ fontFamily: "Great Vibes", fontSize: "16px" }}>Ibu Endang Resmala</td>
-                            <td style={{ fontFamily: "Great Vibes", float: "right", fontSize: "16px" }}>Ibu Tatty Widhiastuti</td>
+                            </tr>
+                            <tr>
+                                <td style={{ fontFamily: "Great Vibes", fontSize: "16px" }}>Ibu Endang Resmala</td>
+                                <td style={{ fontFamily: "Great Vibes", float: "right", fontSize: "16px" }}>Ibu Tatty Widhiastuti</td>
 
-                        </tr>
+                            </tr>
 
-                    </table>
-                    <br />
+                        </table>
+                        <br />
+                    </div>
                 </div>
             </div>
 
