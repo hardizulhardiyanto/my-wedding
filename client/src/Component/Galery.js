@@ -234,7 +234,7 @@ export default class Galery extends Component {
 
                                 </div>
                                 :
-                                <div className="gif-registration-slider">
+                                <div className="gif-registration-slider gallery-fancybox">
 
 
                                     <div className="grid wedding">
