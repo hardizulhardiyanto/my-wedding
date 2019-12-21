@@ -4,17 +4,17 @@ const dataTamu = require('../Model/tamu');
 
 router.post('/', function (req, res) {
     let { nama,
-        email,
         jmlKeluarga,
         alamat,
+        konfirmasi,
         deskripsi } = req.body;
 
     try {
         const newAddTamu = new dataTamu({
             nama,
-            email,
             jmlKeluarga,
             alamat,
+            konfirmasi,
             deskripsi
 
         });
@@ -33,6 +33,7 @@ router.get('/', (req, res) => {
         if (err) {
             res.status(400).json({ status: 'failed', error: err });
         }else{
+            
             res.status(200).json({ status:'success', data: response })
         }
     })

@@ -11,10 +11,10 @@ export const dataPostTamuErorr = (PostTamuError) => ({
     PostTamuError
 })
 
-export const SaveDataTamu = (nama, email, jmlKeluarga, alamat, deskripsi) => {
+export const SaveDataTamu = (nama, jmlKeluarga, alamat, konfirmasi, deskripsi) => {
 
     return dispatch => {
-        return request.post(`/api/datatamu`, {nama, email, jmlKeluarga, alamat, deskripsi})
+        return request.post(`/api/datatamu`, {nama, jmlKeluarga, alamat, konfirmasi, deskripsi})
         .then(result => {
             dispatch(dataPostTamuSuccess(result))
         })

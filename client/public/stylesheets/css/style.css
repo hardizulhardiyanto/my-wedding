@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------
+/* ------------------------------------------------------------------
 [Master Stylesheet]
 Theme Name:
 Version:        1.0.0
@@ -2008,7 +2008,7 @@ a:focus {
 --------------------------------------------------------------*/
 .site-footer {
   background: url("../images/using/newDSC03792.jpg") center center/cover no-repeat local;
-  text-align: center;
+  /* text-align: center; */
   color: #fff;
   padding: 160px 0;
   position: relative;
@@ -3199,10 +3199,27 @@ a:focus {
 }
 
 @media (max-width: 500px) {
-  .gallery-section .masonry-gallery {
+  .gallery-section .masonry-gallery{
+    
     margin: 0;
+    /* background-color: #375b54; */
+
+    
+    
+    
   }
 }
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 .gallery-section .masonry-gallery .grid {
   width: 33.33%;
@@ -3529,6 +3546,7 @@ a:focus {
 @media (max-width: 767px) {
   .gift-registration-section .gif-registration-slider {
     margin-top: 45px;
+    background-color: #548a7f;
   }
 }
 
@@ -4064,3 +4082,26 @@ a:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* for Family Footer*/
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 50%;
+}
+
+.box1 {
+  vertical-align: right;
+  width: 50%;
+  
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

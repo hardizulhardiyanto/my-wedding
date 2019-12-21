@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class Musicbox extends Component {
     constructor(props) {
         super(props);
@@ -16,6 +15,8 @@ export default class Musicbox extends Component {
 
     componentDidMount() {
         this.play()
+
+
     }
 
     play = () => {
@@ -23,10 +24,13 @@ export default class Musicbox extends Component {
         this.audio.play();
     }
 
+
     pause = () => {
         this.setState({ play: false, pause: true })
         this.audio.pause();
     }
+
+
 
     render() {
 
@@ -48,7 +52,6 @@ export default class Musicbox extends Component {
                         </button>
                     </div>
                 }
-
 
             </div>
 

@@ -14,8 +14,9 @@ import Rsvp from '../Container/Rsvp';
 import ThanksTo from './ThanksTo';
 import TextToThanks from './TextToThanks';
 import Footer from './Footer';
+import Family from './Family';
 
-export default class Home extends Component {
+class Home extends Component {
 
     render() {
         return (
@@ -33,6 +34,7 @@ export default class Home extends Component {
                 <Galery/>
                 <ThanksTo/>
                 <TextToThanks/>
+                <Family/>
                 <Footer/>
                 <Musicbox />
             </div>
@@ -41,3 +43,5 @@ export default class Home extends Component {
         )
     }
 }
+
+export default (Home)

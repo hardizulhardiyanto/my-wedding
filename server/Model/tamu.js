@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var tamuSchema = new Schema({
     nama: String,
-    email: String,
     jmlKeluarga: String,
     alamat: String,
+    konfirmasi: String,
     deskripsi: String,
 })
 
