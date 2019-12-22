@@ -18,7 +18,7 @@ export default class Section extends Component {
                                         <h3>The Groom</h3>
                                         <p><i>“True love doesn’t end at death. If Allah wills it, it’ll continue in Jannah.                                                                                                                                                                                                    ”</i></p>
                                         
-                                        <span className="signature">Achmad Zulhardiyanto</span>
+                                        <span className="signature">Achmad Zulhardiyanto,S.Kom.,M.Kom</span>
                                         <ul className="social-links">
                                             <li><a href="https://www.instagram.com/zulhardiyanto/?hl=id"><i className="fa fa-instagram"></i></a></li>
                                         </ul>
@@ -31,7 +31,7 @@ export default class Section extends Component {
                                         <h3>The Bride</h3>
                                         <p><i>“Marrying someone who Loves ALLAH, will show you more about your future than anything else you’ll hear or see.                                                                                                                                                                                                                                                                          ”</i></p>
                                         
-                                    <span className="signature">Resti Gamiarsi</span>
+                                    <span className="signature">Resti Gamiarsi,S.E,.M.Kom</span>
                                     <ul className="social-links">
                                         <li><a href="https://www.instagram.com/rgamiarsi/"><i className="fa fa-instagram"></i></a></li>
                                     </ul>
