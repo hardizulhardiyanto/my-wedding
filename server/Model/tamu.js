@@ -6,7 +6,7 @@ var tamuSchema = new Schema({
     jmlKeluarga: String,
     alamat: String,
     konfirmasi: String,
-    deskripsi: String,
+    deskripsi: String
 })
 
 module.exports = mongoose.model('tamuSchema',tamuSchema);

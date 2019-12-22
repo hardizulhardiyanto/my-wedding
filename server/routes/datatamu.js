@@ -33,8 +33,13 @@ router.get('/', (req, res) => {
         if (err) {
             res.status(400).json({ status: 'failed', error: err });
         }else{
+            dataTamu.find( { konfirmasi: "hadir" } ).count()
+            .exec((err, responseHadir) => {
+
+                res.status(200).json({ status:'success', data: response, dataHadir:responseHadir })
+
+            })
             
-            res.status(200).json({ status:'success', data: response })
         }
     })
 })

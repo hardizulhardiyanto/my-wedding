@@ -27,22 +27,27 @@
                     <tbody>
                         <form method="post" action="/postDelete">
                             <button type="submit" class="btn btn-danger">Delete</button>
-                            
-                            Jumlah yang hadir : <%=docs.length%>
+
+                            Total Keseluruhan : <%=docs.length%> ,            
+                            Total kehadiran : <%=responseHadir%>,             
+                            Total tidak hadir : <%=responseTidakHadir%>
+
+                           
+
                             <% for ( let i = 0; i < docs.length; i++) {%>
-                                
+
                             <tr>
                                 <td>
                                     <input type="checkbox" class="checkthis" name="deleteCheck" id="deleteCheck"
-                                    value="<%=`${docs[i]._id}`%>" />
-                                    
+                                        value="<%=`${docs[i]._id}`%>" />
+
                                 </td>
                                 <td><%= docs[i].nama %></td>
                                 <td><%= docs[i].jmlKeluarga %></td>
                                 <td><%= docs[i].alamat %></td>
                                 <td><%= docs[i].konfirmasi %></td>
                                 <td><%= docs[i].deskripsi %></td>
-                                
+
                             </tr>
 
                             <% } %>

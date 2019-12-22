@@ -11,11 +11,23 @@ var nav = 1
 router.get('/', function (req, res, next) {
 
   dataTamu.find({}, {}, function (e, docs) {
-    
-    res.render('list', {
-      docs,
-      nav,
-    });
+
+    dataTamu.find({ konfirmasi: "hadir" }).count()
+      .exec((err, responseHadir) => {
+        
+        dataTamu.find({ konfirmasi: "tidak_hadir" }).count()
+          .exec((err, responseTidakHadir) => {
+
+            res.render('list', {
+              docs,
+              responseHadir,
+              responseTidakHadir,
+              nav,
+            });
+
+          })
+
+      })
   });
 
 });
